@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clean</title>
+
+    <meta name="description" content="Сайт для повышения своей продуктивности. Повышай свою продуктивность вместе с нами">
+    <meta name="keywords" content="продуктивность, мотивация">
+    <meta name="author" content="Александр Бобкин">
+
+    <meta property="og:title" content="Повысить свою продуктивность">
+    <meta property="og:description" content="Повысить свою продуктивность">
+    <meta property="og:image" content="./img/icon/logo.svg">
+    <meta property="og:type" content="website">
+
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
@@ -16,7 +27,7 @@
 </head>    
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container-group-1200">
             <div class="header__container">
                 <div class="logo"><img src="img/icon/logo.svg"></div>
                 <nav class="nav-links">
@@ -49,11 +60,13 @@
         </div>
     </section>
     <section class="logo-section">
-        <img src="img/logo__bitbucket.svg" alt="Bitbucket">
-        <img src="img/logo__apple-watch.svg" alt="Apple Watch">
-        <img src="img/logo__facebook.svg" alt="Facebook">
-        <img src="img/logo__atlassian.svg" alt="Atlassian">
-        <img src="img/logo__audi.svg" alt="Audi">
+        <div class="container-group-888">
+            <img src="img/logo__bitbucket.svg" alt="Bitbucket">
+            <img src="img/logo__apple-watch.svg" alt="Apple Watch">
+            <img src="img/logo__facebook.svg" alt="Facebook">
+            <img src="img/logo__atlassian.svg" alt="Atlassian">
+            <img src="img/logo__audi.svg" alt="Audi">
+        </div>
     </section>
     <section id="blog" class="content-section">
         <div class="text-content">
@@ -70,44 +83,46 @@
         </div>
     </section>
     <section class="about-section">
-        <h5 class="about-subtitle">About Us</h5>
-        <h2 class="about-title">Read about our app</h2>
-    
-        <div class="features">
-            <div class="feature">
-                <div class="icon">
-                    <img src="img/icon__overview.svg" alt="Home Icon">
+        <div class="container-group-1200">
+            <h5 class="about-subtitle">About Us</h5>
+            <h2 class="about-title">Read about our app</h2>
+        
+            <div class="features">
+                <div class="feature">
+                    <div class="icon">
+                        <img src="img/icon__overview.svg" alt="Home Icon">
+                    </div>
+                    <h3>Overview</h3>
+                    <p class="feature-description">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.</p>
                 </div>
-                <h3>Overview</h3>
-                <p class="feature-description">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.</p>
-            </div>
-            <div class="feature">
-                <div class="icon">
-                    <img src="img/icon__files.svg" alt="Files Icon">
+                <div class="feature">
+                    <div class="icon">
+                        <img src="img/icon__files.svg" alt="Files Icon">
+                    </div>
+                    <h3>Files</h3>
+                    <p class="feature-description">No vim nulla vitae intellegat. Ei enim error ius, solet atomorum conceptam ex has.</p>
                 </div>
-                <h3>Files</h3>
-                <p class="feature-description">No vim nulla vitae intellegat. Ei enim error ius, solet atomorum conceptam ex has.</p>
-            </div>
-            <div class="feature">
-                <div class="icon">
-                    <img src="img/icon__chats.svg" alt="Meeting Chats Icon">
+                <div class="feature">
+                    <div class="icon">
+                        <img src="img/icon__chats.svg" alt="Meeting Chats Icon">
+                    </div>
+                    <h3>Meeting chats</h3>
+                    <p class="feature-description">Vim ne tacimates neglegentur. Erat diceret omittam at est.</p>
                 </div>
-                <h3>Meeting chats</h3>
-                <p class="feature-description">Vim ne tacimates neglegentur. Erat diceret omittam at est.</p>
-            </div>
-            <div class="feature">
-                <div class="icon">
-                    <img src="img/icon__save.svg" alt="Save Events Icon">
+                <div class="feature">
+                    <div class="icon">
+                        <img src="img/icon__save.svg" alt="Save Events Icon">
+                    </div>
+                    <h3>Save events</h3>
+                    <p class="feature-description">Nisi idque mel ea, nominati voluptatum.</p>
                 </div>
-                <h3>Save events</h3>
-                <p class="feature-description">Nisi idque mel ea, nominati voluptatum.</p>
             </div>
-        </div>
-    
-        <div class="action-buttons">
-            <button class="red-button">Read more</button>
-            <span class="or-text">or</span>
-            <button class="about-button primary-button">Get started</button>
+        
+            <div class="action-buttons">
+                <button class="red-button">Read more</button>
+                <span class="or-text">or</span>
+                <button class="about-button primary-button">Get started</button>
+            </div>
         </div>
     </section>
     <section id="features" class="stats-sections">
@@ -198,88 +213,90 @@
         </div>
     </section>
     <section id="pricing" class="testimonials">
-        <div class="testimonials-header">
-            <h5>TESTIMONIALS</h5>
-            <h2>Customers's quotes</h2>
-            <p>Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an.</p>
-        </div>
-        <div class="testimonials-slider">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="testimonial-card">
-                            <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
-                            <div class="testimonial-author">
-                                <img src="img/user-1.svg" alt="User image">
+        <div class="testimonials-container">
+            <div class="testimonials-header">
+                <h5>TESTIMONIALS</h5>
+                <h2>Customers's quotes</h2>
+                <p>Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an.</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
+                                <div class="testimonial-author">
+                                    <img src="img/user-1.svg" alt="User image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
+                                <div class="testimonial-author">
+                                    <img src="img/user-1.svg" alt="User image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
+                                <div class="testimonial-author">
+                                    <img src="img/user-1.svg" alt="User image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
+                                <div class="testimonial-author">
+                                    <img src="img/user-1.svg" alt="User image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
+                                <div class="testimonial-author">
+                                    <img src="img/user-1.svg" alt="User image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
+                                <div class="testimonial-author">
+                                    <img src="img/user-1.svg" alt="User image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
+                                <div class="testimonial-author">
+                                    <img src="img/user-1.svg" alt="User image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
+                                <div class="testimonial-author">
+                                    <img src="img/user-1.svg" alt="User image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
+                                <div class="testimonial-author">
+                                    <img src="img/user-1.svg" alt="User image">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-card">
-                            <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
-                            <div class="testimonial-author">
-                                <img src="img/user-1.svg" alt="User image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-card">
-                            <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
-                            <div class="testimonial-author">
-                                <img src="img/user-1.svg" alt="User image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-card">
-                            <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
-                            <div class="testimonial-author">
-                                <img src="img/user-1.svg" alt="User image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-card">
-                            <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
-                            <div class="testimonial-author">
-                                <img src="img/user-1.svg" alt="User image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-card">
-                            <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
-                            <div class="testimonial-author">
-                                <img src="img/user-1.svg" alt="User image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-card">
-                            <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
-                            <div class="testimonial-author">
-                                <img src="img/user-1.svg" alt="User image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-card">
-                            <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
-                            <div class="testimonial-author">
-                                <img src="img/user-1.svg" alt="User image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-card">
-                            <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
-                            <div class="testimonial-author">
-                                <img src="img/user-1.svg" alt="User image">
-                            </div>
-                        </div>
-                    </div>
+                    <div class="second-pagination"></div>
                 </div>
-                <div class="second-pagination"></div>
             </div>
         </div>
     </section>
@@ -342,17 +359,19 @@
         </div>
     </section>
     <section class="newsletter-section">
-        <div class="newsletter-text">
-            <h4>Sign up for newsletter</h4>
-            <p>Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero alterum.</p>
+        <div class="container-group-888">
+            <div class="newsletter-text">
+                <h4>Sign up for newsletter</h4>
+                <p>Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero alterum.</p>
+            </div>
+            <form class="newsletter-form">
+                <input class="email" type="email" placeholder="Email address" required>
+                <button class="save" type="submit">Save me</button>
+            </form>
         </div>
-        <form class="newsletter-form">
-            <input class="email" type="email" placeholder="Email address" required>
-            <button class="save" type="submit">Save me</button>
-        </form>
     </section>
     <footer class="footer">
-        <div class="container">
+        <div class="container-group-1200">
             <div class="footer__container">
                 <div class="logo"><img src="img/icon/logo.svg"></div>
                 <nav class="nav-links">
@@ -400,7 +419,10 @@
                 el: '.second-pagination',
                 clickable: true, 
             },
-            slidesPerView: 1.5,
+            breakpoints: {
+                769: {slidesPerView: 1.5},
+                768: {slidesPerView: 1}
+            },
             slidesPerGroup: 1,
             spaceBetween: 64,
         });
@@ -418,3 +440,6 @@
     </script>
 </body>
 </html>
+
+
+
