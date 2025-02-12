@@ -41,10 +41,10 @@
                         </ul>
                     </nav>
                     <div class="social-icons">
-                        <a href="#facebook" class="social-icon"><img src="img/icon/icon__facebook.svg"></a>
-                        <a href="#telegram" class="social-icon"><img src="img/icon/icon__telegram.svg"></a>
-                        <a href="#twitter" class="social-icon"><img src="img/icon/icon__twitter.svg"></a>
-                        <a href="#medium" class="social-icon"><img src="img/icon/icon__medium.svg"></a>
+                        <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F" class="social-icon" target="_blank" ><img src="img/icon/icon__facebook.svg"></a>
+                        <a href="https://web.telegram.org/a/" class="social-icon" target="_blank"><img src="img/icon/icon__telegram.svg"></a>
+                        <a href="https://x.com/?mx=2" class="social-icon" target="_blank"><img src="img/icon/icon__twitter.svg"></a>
+                        <a href="https://medium.com/" class="social-icon" target="_blank"><img src="img/icon/icon__medium.svg"></a>
                     </div>
                 </div>
                 <button class="get-started primary-button">Get started</button>
@@ -444,10 +444,21 @@
             });
         });
         const burgerButton = document.getElementById('burger-button');
+        const headerMenuContainer = document.getElementById('header__menu-container');
+
         burgerButton.addEventListener('click', () => {
             const headerMenuContainer  = document.getElementById('header__menu-container');
             headerMenuContainer.classList.toggle('open');
+            burgerButton.classList.toggle('open')
+            document.body.classList.toggle('no-scroll');
         })
+        const menuContainer = headerMenuContainer.querySelectorAll('a');
+        menuContainer.forEach(link => {
+            link.addEventListener('click', () => {
+                headerMenuContainer.classList.remove('open');
+                document.body.classList.remove('no-scroll');
+    });
+});
     </script>
 </body>
 </html>
