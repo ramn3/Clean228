@@ -29,23 +29,30 @@
     <header class="header">
         <div class="container-group-1200">
             <div class="header__container">
-                <div class="logo"><img src="img/icon/logo.svg"></div>
-                <nav class="nav-links">
-                    <ul class="header__menu">
-                        <li class="header__menu-item"><a href="#home" class="active">Home</a></li>
-                        <li class="header__menu-item"><a href="#blog" class="header__menu-link">Blog</a></li>
-                        <li class="header__menu-item"><a href="#features" class="header__menu-link">Features</a></li>
-                        <li class="header__menu-item"><a href="#pricing" class="header__menu-link">Pricing</a></li>
-                        <li class="header__menu-item"><a href="#documentation" class="header__menu-link">Documentation</a></li>
-                    </ul>
-                </nav>
-                <div class="social-icons">
-                    <a href="#facebook" class="social-icon"><img src="img/icon/icon__facebook.svg"></a>
-                    <a href="#telegram" class="social-icon"><img src="img/icon/icon__telegram.svg"></a>
-                    <a href="#twitter" class="social-icon"><img src="img/icon/icon__twitter.svg"></a>
-                    <a href="#medium" class="social-icon"><img src="img/icon/icon__medium.svg"></a>
+                <a class="logo" href="index.html"><img src="img/icon/logo.svg"></a>
+                <div class="header__menu-container" id="header__menu-container">
+                    <nav class="nav-links">
+                        <ul class="header__menu">
+                            <li class="header__menu-item"><a href="#home" class="active">Home</a></li>
+                            <li class="header__menu-item"><a href="#blog" class="header__menu-link">Blog</a></li>
+                            <li class="header__menu-item"><a href="#features" class="header__menu-link">Features</a></li>
+                            <li class="header__menu-item"><a href="#pricing" class="header__menu-link">Pricing</a></li>
+                            <li class="header__menu-item"><a href="#documentation" class="header__menu-link">Documentation</a></li>
+                        </ul>
+                    </nav>
+                    <div class="social-icons">
+                        <a href="#facebook" class="social-icon"><img src="img/icon/icon__facebook.svg"></a>
+                        <a href="#telegram" class="social-icon"><img src="img/icon/icon__telegram.svg"></a>
+                        <a href="#twitter" class="social-icon"><img src="img/icon/icon__twitter.svg"></a>
+                        <a href="#medium" class="social-icon"><img src="img/icon/icon__medium.svg"></a>
+                    </div>
                 </div>
                 <button class="get-started primary-button">Get started</button>
+                <button class="burger-button" id="burger-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>
@@ -427,7 +434,6 @@
             spaceBetween: 64,
         });
         const detailsElements = document.querySelectorAll('details');
-
         detailsElements.forEach((detail) => {
             detail.addEventListener('click', () => {
                 detailsElements.forEach((otherDetail) => {
@@ -437,6 +443,11 @@
                 });
             });
         });
+        const burgerButton = document.getElementById('burger-button');
+        burgerButton.addEventListener('click', () => {
+            const headerMenuContainer  = document.getElementById('header__menu-container');
+            headerMenuContainer.classList.toggle('open');
+        })
     </script>
 </body>
 </html>
