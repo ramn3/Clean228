@@ -10,7 +10,9 @@ a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
-
+html, body {
+    -webkit-tap-highlight-color: transparent;
+}
 .no-scroll {
     overflow: hidden;
 }
@@ -129,7 +131,6 @@ html {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    height: 570px;
 }
 
 h5{
@@ -601,8 +602,8 @@ h3{
 
 .testimonials .swiper-container {
     position: relative;
-    width: 100%;
-    max-width: 700px;
+    width: 700px;
+    max-width: 100%;
     margin: 0 auto;
     overflow: hidden; 
 }
@@ -1000,11 +1001,11 @@ button:hover{
     .content-section .text-content{
         margin: 5px 0px;
         align-items: center;
+        width: 90%;
     }
     .content-section .image-content{
         display: none;
     }
-
     .blog-card{
         display: flex;
         flex-direction: column-reverse;
@@ -1023,7 +1024,6 @@ button:hover{
         margin: 30px auto;
         flex-wrap: wrap;
     }
-    
     .blog-content h1{
         font-size: 30px;
         margin: 0;
@@ -1033,8 +1033,7 @@ button:hover{
     .blog-content p{
         text-align: center;
         margin: 0;
-    }
-    
+    } 
     .blog__buttons{
         display: flex;
         margin: 0px;
@@ -1045,12 +1044,18 @@ button:hover{
      }
     .testimonials-container{
         justify-content: space-between;
-        gap: 10%;
+        gap: 4%;
         padding: 50px 0;
     }
     .testimonials-header{
         gap: 10px;
-        margin-left: 5%;
+        margin-left: 4%;
+        width: 25%;
+    }
+    .testimonials-slider{
+        overflow-x: hidden;
+        width: 55%;
+        margin-right: 0%;
     }
     .testimonials-header p{
         margin: 0;
@@ -1060,6 +1065,7 @@ button:hover{
     }
     .testimonial-card{
         margin: 0px;
+        width: none;
     }
     .testimonial-card p{
         margin: 0 10px;
@@ -1137,10 +1143,14 @@ button:hover{
         align-items: center;
     }
     .testimonials .second-pagination{
-        margin: 70px 40% 100px 40%; 
+        display: flex;
+        margin: 70px 0% 100px 0%; 
+        justify-content: center;
      }
      .testimonials-header{
         margin: 0;
+        width: 80%;
+        text-align: center;
     }
     .testimonials-header p{
         text-align: center;
@@ -1152,7 +1162,9 @@ button:hover{
     .testimonial-card{
         margin: 0px;
     }
-    
+    .testimonials-slider{
+        width: 80%;
+    }
     .testimonial-card p{
         margin: 0 10px;
         text-align: center;
@@ -1183,15 +1195,15 @@ button:hover{
         background: #D6DAE5;
     }
     .burger-button span{
-        width: 60%;
+        width: 24px;
         background: #5E81FE;
         height: 1px;
     }
     .header__menu-container.open{
         transform: translate(0%);
         display: flex;
-        flex-direction: column-reverse;
-        justify-content: flex-end;
+        flex-direction: column;
+        justify-content: flex-start;
         align-items: flex-start;
         gap: 24px;
         padding: 40px;
@@ -1207,7 +1219,7 @@ button:hover{
         transition: 0.4s;
     }
     .burger-button.open span:nth-child(1) {
-        transform: rotate(45deg) translate(6px, 6px);
+        transform: rotate(45deg) translate(7px, 7px);
         transition: 0.4s;
     }
     
@@ -1241,4 +1253,56 @@ button:hover{
     .footer .social-icons{
         display: none;
     }
+}
+
+@media (max-width: 480px) {
+    .hero-title{
+        text-align: center;
+    }
+    .stats-sections{
+        .stat-item__number{
+            font-size: 36px;
+        }
+        .stat-text{
+            font-size: 14px;
+            height: 20%;
+        }
+        .stat-item__blue{
+            padding: 12px;
+        }
+        .stat-item__dark-blue{
+            padding: 8px;
+        }
+    }
+    .testimonial-card{
+        width: 80%;
+        height: 200px
+    }
+    .testimonials-header{
+        width: 90%;
+        text-align: center;
+    }
+    .faq-item-content{
+        flex-direction: column;
+        gap: 8px;
+        p{
+            width: 80%;
+            margin-left: -20px;
+        }
+    }
+    .newsletter-section{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .footer__menu{
+        flex-direction: column;
+        gap: 8px;
+        text-align: right;
+    }
+    .footer__container{
+        height: auto;
+    }
+}
+
+@media (max-width: 320px){ 
 }
