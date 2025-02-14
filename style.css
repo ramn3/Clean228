@@ -1079,7 +1079,7 @@ button:hover{
         gap: 24px
     }
     .faq-section__container{
-        margin-left: 10%;
+        margin: 0 10%;
     }
     .newsletter-section .container-group-888{
         width: auto;
@@ -1300,12 +1300,24 @@ button:hover{
         margin: 0 auto;
     }
     .footer__menu{
-        flex-direction: column;
         gap: 8px;
-        text-align: right;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Два столбца */
+        grid-template-rows: auto auto auto; /* Три строки */
+        margin-bottom: 40px;
+        justify-content: space-between;
+        align-items: center;
+        width: 400px;
+        margin: 20px;
     }
     .footer__container{
         height: auto;
+        align-items: center;
+    }
+    .footer-developer{
+        display: flex;
+        justify-content: center ;
+        margin-bottom: 12px;
     }
 }
 
